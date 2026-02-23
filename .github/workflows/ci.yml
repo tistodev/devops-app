@@ -34,7 +34,7 @@ jobs:
            ghcr.io/${{ github.repository_owner }}/devops-app:latest
            ghcr.io/${{ github.repository_owner }}/devops-app:${{ github.sha }}
 
-                 - name: Update k8s manifest with image tag (commit SHA)
+      - name: Update k8s manifest with image tag (commit SHA)
         run: |
           sed -i "s#ghcr.io/${{ github.repository_owner }}/devops-app:.*#ghcr.io/${{ github.repository_owner }}/devops-app:${{ github.sha }}#g" k8s/deployment.yaml
           git status
