@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/tistodev/devops-app:7b27c9c5e75023152f1e6fc35ef65beb161eb729
+        image: ghcr.io/tistodev/devops-app:2c119524d289983adcbbe52e32f8f5231b588c1d
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
